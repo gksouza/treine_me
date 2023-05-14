@@ -7,27 +7,30 @@
 }
 
 :root {  
-  min-height: 100vh;
   font-size: 62.5%;
-
+  
   --ff-body: 'Open Sans', sans-serif;
   --ff-nav: 'Mulish', sans-serif;
-
+  
   --fs-p: 1.4rem;
   --fs-nav: 1.8rem;
   --fs-h1: 5rem;
-
-  --color-h1: hsl(259, 42%, 14%);
-  --color-h1span: hsl(186, 40%, 67%);
-  --color-a: hsl(259, 42%, 14%);
+  
+  --color-h1-a: hsl(259, 42%, 14%);
+  --color-h1span: hsl(186, 40%, 67%);  
   --color-p: hsl(257, 6%, 50%);
   --color-btn: hsl(0, 0%, 100%);
-
+  
   --bcg-btn: hsl(159, 36%, 57%);
   --bcg-btn-hover: hsl(159, 36%, 48%);
 }
 
-body, button {  
+body {
+  min-height: 100vh;
+  padding: .5rem;   
+}
+
+body, button {   
   background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
   font-size: 1.6rem;
   font-family: var(--ff-body);
@@ -55,7 +58,7 @@ section p, footer {
 }
 
 h1, p {  
-  width: 42rem;
+  width: 42.5rem;
 }
 
 ul li a:hover, h1 span, footer a {
@@ -78,7 +81,7 @@ ul {
 }
 
 a {
-  color: var(--color-a);
+  color: var(--color-h1-a);
 }
 
 ul li a {
@@ -94,7 +97,7 @@ h1 {
   font-size: var(--fs-h1);
   font-weight: normal;
   line-height: 5.5rem;
-  color: var(--color-h1);
+  color: var(--color-h1-a);
 }
 
 h1 span {
