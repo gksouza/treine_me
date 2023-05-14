@@ -6,12 +6,35 @@
   list-style: none;
 }
 
-body, button {
-  font-family: 'Open Sans', sans-serif;
+:root {  
+  min-height: 100vh;
+  font-size: 62.5%;
+
+  --ff-body: 'Open Sans', sans-serif;
+  --ff-nav: 'Mulish', sans-serif;
+
+  --fs-p: 1.4rem;
+  --fs-nav: 1.8rem;
+  --fs-h1: 5rem;
+
+  --color-h1: hsl(259, 42%, 14%);
+  --color-h1span: hsl(186, 40%, 67%);
+  --color-a: hsl(259, 42%, 14%);
+  --color-p: hsl(257, 6%, 50%);
+  --color-btn: hsl(0, 0%, 100%);
+
+  --bcg-btn: hsl(159, 36%, 57%);
+  --bcg-btn-hover: hsl(159, 36%, 48%);
+}
+
+body, button {  
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+  font-size: 1.6rem;
+  font-family: var(--ff-body);
 }
 
 nav, h1, ul {  
-  font-family: 'Mulish', sans-serif;
+  font-family: var(--ff-nav); 
 }
 
 nav, ul, main, button {
@@ -27,36 +50,35 @@ nav, main {
 }
 
 section p, footer {
-  font-size: 14px;
-  line-height: 28px;
+  font-size: var(--fs-p);
+  line-height: 2.8rem;
 }
 
 h1, p {  
-  width: 420px;
+  width: 42rem;
 }
 
-body {  
-  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
-
-  min-height: 100vh;
+ul li a:hover, h1 span, footer a {
+  font-weight: bold;  
 }
 
 .page {
-  width: 1000px;
+  width: 100rem;
   margin: 0 auto;
-  padding-top: 65px;
+  padding-top: 6.5rem;
 }
 
-nav {  
-  margin-bottom: 55px;  
+nav {
+  font-size: var(--fs-nav);
+  margin-bottom: 5.5rem;  
 }
 
-ul {   
-  gap: 50px;  
+ul {  
+  gap: 5rem;  
 }
 
 a {
-  color: hsl(259, 42%, 14%);   
+  color: var(--color-a);
 }
 
 ul li a {
@@ -64,55 +86,49 @@ ul li a {
 }
 
 /* pseudo class = a:hover */
-ul li a:hover {
-  font-weight: bold;
+ul li a:hover {  
   opacity: 1;
 }
 
 h1 { 
-  font-size: 49px;
-  line-height: 56px;
-  color: hsl(259, 42%, 14%);
-  font-weight: normal;  
+  font-size: var(--fs-h1);
+  font-weight: normal;
+  line-height: 5.5rem;
+  color: var(--color-h1);
 }
 
 h1 span {
-  color: hsl(186, 40%, 67%);
-  font-weight: bold;
+  color: var(--color-h1span);  
 }
 
 section p {  
-  color: hsl(257, 6%, 50%);
-  margin: 40px 0;  
+  color: var(--color-p);
+  margin: 4rem 0;  
 }
 
 button {    
   justify-content: center;
-  gap: 10px;
+  gap: 1rem;
 
   text-transform: uppercase;
 
-  color: white;
-  background: hsl(159, 36%, 57%);
+  color: var(--color-btn);
+  background: var(--bcg-btn);
 
   border: 0;
-  border-radius: 4px;
-  padding: 14px 32px 15px;
+  border-radius: .4rem;
+  padding: 1.4rem 3.2rem 1.5rem;
 
   cursor: pointer;
 }
 
 button:hover {
-  background: hsl(159, 36%, 48%);
+  background: var(--bcg-btn-hover);
 }
 
 footer {  
   text-align: center;
-  margin-top: 80px;
-}
-
-footer a {
-  font-weight: bold;
+  margin-top: 8rem;
 }
 
 #balls {
